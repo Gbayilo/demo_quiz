@@ -9,38 +9,37 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Quiz App</h1>
+            <h1>TheQuizMaster</h1>
         </div>
         <nav>
+            <a href="/dashboard">Dashboard</a>
             <a href="/profile">Profile</a>
-            <a href="/settings">Settings</a>
             <a href="/logout">Logout</a>
         </nav>
     </header>
 
     <div class="quiz-type-selection">
-        <h2>Select Your Quiz Type</h2>
-        <p>Choose the type of quiz you'd like to take:</p>
+        <h2>Select Quiz Type</h2>
         <div class="quiz-options">
-            <div class="quiz-card">
-                <h3>Math</h3>
-                <p>Test your numerical and problem-solving skills.</p>
-                <button onclick="window.location.href='/quiz/math'">Start Math Quiz</button>
+            <div class="quiz-option">
+                <h3>Geography Quiz</h3>
+                <p>Explore the world and test your knowledge of geography.</p>
+                <button onclick="window.location.href='/quiz/geography'">Start Geography Quiz</button>
             </div>
-            <div class="quiz-card">
-                <h3>Science</h3>
-                <p>Explore the wonders of science and test your knowledge.</p>
+            <div class="quiz-option">
+                <h3>Science Quiz</h3>
+                <p>Explore the wonders of science with challenging questions.</p>
                 <button onclick="window.location.href='/quiz/science'">Start Science Quiz</button>
             </div>
-            <div class="quiz-card">
-                <h3>History</h3>
-                <p>Take a journey through time with historical questions.</p>
+            <div class="quiz-option">
+                <h3>History Quiz</h3>
+                <p>Revisit historical events and figures.</p>
                 <button onclick="window.location.href='/quiz/history'">Start History Quiz</button>
             </div>
-            <div class="quiz-card">
+            <div class="quiz-option">
                 <h3>General Knowledge</h3>
-                <p>Challenge yourself with a mix of topics and questions.</p>
-                <button onclick="window.location.href='/quiz/general'">Start General Quiz</button>
+                <p>Test your overall knowledge on various topics.</p>
+                <button onclick="window.location.href='/quiz/general'">Start General Knowledge Quiz</button>
             </div>
         </div>
     </div>
@@ -48,5 +47,7 @@
     <footer>
         <p>Quiz App &copy; 2025</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
