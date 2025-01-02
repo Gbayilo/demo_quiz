@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Knowledge Quiz</title>
+    <title>Quiz Session</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="quiz-header">
-        <h1>General Knowledge Quiz</h1>
+    <header>
+        <div class="logo">
+            <h1>Quiz App</h1>
+        </div>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+        </nav>
     </header>
 
-    <main class="quiz-page">
-        <div class="quiz-container">
-            <div id="question-container">
-                <h2 id="question">Question will appear here</h2>
-                <ul id="options">
-                    <!-- Options will be dynamically added here -->
-                </ul>
-            </div>
-
-            <div class="quiz-navigation">
-                <button id="prev-btn" class="btn">Previous</button>
-                <button id="next-btn" class="btn">Next</button>
-                <button id="submit-btn" class="btn">Submit</button>
-            </div>
-
-            <p id="feedback" class="hidden"></p>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h2>Geography Quiz</h2>
+            <p>Question <span id="current-question">1</span> of 10</p>
+            <p>Time Left: <span id="timer">00:30</span></p>
         </div>
-    </main>
 
-    <footer class="quiz-footer">
-        <p>&copy; 2025 Quiz Ap
+        <div class="quiz-question">
+            <h3>What is the capital of France?</h3>
+        </div>
+
+        <div class="quiz-options">
+            <button class="option">A. Madrid</button>
+            <button class="option">B. Berlin</button>
+            <button class="option">C. Paris</button>
+            <button class="option">D. Rome</button>
+        </div>
+
+        <div class="quiz-navigation">
+            <button class="btn" id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quiz App &copy; 2025</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
